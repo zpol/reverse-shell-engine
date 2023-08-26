@@ -42,7 +42,9 @@ Just run:
 `./rse.sh` 
 
 The application will start by promting a message asking for the IP/hostname and port where to listen to. 
-Once the application has this data it will show you a selector where choose from different reverse shells for different languages and operating systems. After that the application will craft that with the specified parameters and output the revershe shell and a base64 encoded version.
+Once the application has this data it will show you a selector where choose from different reverse shells for different languages and operating systems (note that you can search/filter by start typing). 
+
+After that the application will craft that with the specified parameters and output the revershe shell and a base64 encoded version.
 
 ## Some more information
 
