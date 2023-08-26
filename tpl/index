@@ -1,8 +1,12 @@
+linux-awk-tcp-noenc
 linux-bash-tcp-noenc-0
 linux-bash-tcp-noenc-1
 linux-bash-tcp-noenc-2
 linux-bash-udp-noenc-0
+linux-curl-tcp-noenc
+linux-java-tcp-noenc
 linux-netcat_busybox-tcp-noenc
+linux-node-tcp-noenc
 linux-openssl-tcp-SSL-0
 linux-perl-tcp-noenc-0
 linux-perl-tcp-noenc-1
@@ -10,6 +14,7 @@ linux-python-tcp-noenc-0
 linux-python-tcp-noenc-1
 linux-python-tcp-noenc-2
 linux-python-tcp-noenc-3
+linux-tclsh-tcp-noenc
 windows-perl-tcp-noenc-0
 windows-powershell-tcp-noenc-0
 windows-pyton-tcp-noenc-0
