@@ -20,6 +20,7 @@ This tool is just a compilation of many reverse shells found on the internet and
 
 A reverse shell is a remote control technique where a target computer, after being compromised by an attacker's code, establishes a connection back to the attacker's machine. This allows the attacker to gain command-line access and control over the target system, often used in cyberattacks for remote exploitation or unauthorized access. Reverse shells are a method to bypass certain network restrictions, but their use should strictly adhere to ethical and legal guidelines.
 
+This tool is just a quick help to handy copy and paste any revshell you need at any moment in seconds. 
 
 # Installation
 
