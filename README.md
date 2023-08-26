@@ -5,16 +5,6 @@
 ![RSE-screenshot-1](img/rse-screenshot-2.png)
 
 
-⚠️ **DISCLAIMER:** Educational Use Only
-
-The use of this tool or software is intended solely for educational and learning purposes. 
-
-It is not intended for any illegal, unethical, or malicious activities. By using this tool, you agree that:
-
-You will use it exclusively for educational and non-malicious purposes. You will not engage in any illegal or harmful activities using this tool.You understand that the tool is provided as-is, without any warranties or guarantees of any kind.You accept full responsibility for any actions you undertake with this tool and any consequences that may arise.You release the creators, maintainers, and distributors of this tool from any legal liability or responsibility for its use.You will comply with all applicable laws and regulations while using this tool. Please be aware that misuse of this tool may have serious legal and ethical consequences. Always ensure that you have the appropriate permissions and consent before using it in any context.
-
-By using this tool, you acknowledge and agree to the terms and conditions outlined above.
-
 ## What id RSE? Reverse Shell Engine 
 This tool is just a compilation of many reverse shells found on the internet and some other contributions.
 
@@ -52,6 +42,12 @@ Use the payload generated to execute that in the target machine. You will need t
 ## Reverse Shell types and how they work: 
 
 In most cases `ncat` or `nc` will work but in some cases you will need to setup some stuff before being able to accept an incomming connection with some revshell types. 
+
+So for the most cases you can just use on your listenning machine something like: 
+
+`nc -l -p <port>`
+
+When the client makes connection to your server you will be able to execute some commands on the other side.
 
 ### OpenSSL
 ```
@@ -121,3 +117,17 @@ Thank you for considering contributing to this project! Here's how you can get s
 
 Please make sure to follow our [code of conduct](CODE_OF_CONDUCT.md) and our [contribution guidelines](CONTRIBUTING.md). We appreciate your help!
 
+
+
+ 
+
+ # ⚠️ DISCLAIMER 
+## Educational Use Only
+
+The use of this tool or software is intended solely for educational and learning purposes. 
+
+It is not intended for any illegal, unethical, or malicious activities. By using this tool, you agree that:
+
+You will use it exclusively for educational and non-malicious purposes. You will not engage in any illegal or harmful activities using this tool.You understand that the tool is provided as-is, without any warranties or guarantees of any kind.You accept full responsibility for any actions you undertake with this tool and any consequences that may arise.You release the creators, maintainers, and distributors of this tool from any legal liability or responsibility for its use.You will comply with all applicable laws and regulations while using this tool. Please be aware that misuse of this tool may have serious legal and ethical consequences. Always ensure that you have the appropriate permissions and consent before using it in any context.
+
+By using this tool, you acknowledge and agree to the terms and conditions outlined above.
