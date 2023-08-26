@@ -2,6 +2,8 @@ linux-bash-tcp-noenc-0
 linux-bash-tcp-noenc-1
 linux-bash-tcp-noenc-2
 linux-bash-udp-noenc-0
+linux-netcat_busybox-tcp-noenc
+linux-openssl-tcp-SSL-0
 linux-perl-tcp-noenc-0
 linux-perl-tcp-noenc-1
 linux-python-tcp-noenc-0
