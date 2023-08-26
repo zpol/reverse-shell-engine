@@ -1,10 +1,12 @@
-linux-awk-tcp-noenc
+linux-awk-tcp-noenc-0
+linux-awk-tcp-noenc-1
 linux-bash-tcp-noenc-0
 linux-bash-tcp-noenc-1
 linux-bash-tcp-noenc-2
 linux-bash-udp-noenc-0
 linux-curl-tcp-noenc
 linux-java-tcp-noenc
+linux-lua-tcp-noenc
 linux-netcat_busybox-tcp-noenc
 linux-node-tcp-noenc
 linux-openssl-tcp-SSL-0
@@ -15,11 +17,14 @@ linux-python-tcp-noenc-1
 linux-python-tcp-noenc-2
 linux-python-tcp-noenc-3
 linux-tclsh-tcp-noenc
+linux-telnet-tcp-noenc
 windows-perl-tcp-noenc-0
 windows-powershell-tcp-noenc-0
+windows-powershell-tcp-noenc-0 copy
 windows-pyton-tcp-noenc-0
 windows-ruby-tcp-noenc-0
 xx-go-tcp-noenc
+xx-lua-tcp-noenc
 xx-php_exec-tcp-noenc
 xx-php_passthru-tcp-noenc
 xx-php_popen-tcp-noenc
