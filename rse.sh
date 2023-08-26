@@ -32,6 +32,7 @@ function get_tpl() {
 	cat tpl/${TPL_FILE}.tpl | sed "s|XX_CC_SERVER_IP|${SERVER_IP}|" | sed "s|XX_PORT|${PORT}|"|base64
 	echo ""
 
+	echo -e "${GR}>> Execute this payload on the target machine and open a listener on the IP you're selected and you're all set.${NC}"
 	echo -e "${GR}>> Enjoy! Thanks for playing! =)${NC}"
 	
 }

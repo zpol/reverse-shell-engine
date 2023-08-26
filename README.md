@@ -46,6 +46,8 @@ Once the application has this data it will show you a selector where choose from
 
 After that the application will craft that with the specified parameters and output the revershe shell and a base64 encoded version.
 
+Use the payload generated to execute that in the target machine. You will need to previously have a listener in that IP and PORT you specified when creating the payload. In most cases a simple netcat will do the trick: `nc -l -p <port>`
+
 ## Some more information
 
 In the root of the repository you can find the following files: 

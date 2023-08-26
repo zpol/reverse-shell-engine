@@ -12,6 +12,7 @@ windows-perl-tcp-noenc-0
 windows-powershell-tcp-noenc-0
 windows-pyton-tcp-noenc-0
 windows-ruby-tcp-noenc-0
+xx-go-tcp-noenc
 xx-php_exec-tcp-noenc
 xx-php_passthru-tcp-noenc
 xx-php_popen-tcp-noenc
