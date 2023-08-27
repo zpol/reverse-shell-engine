@@ -171,7 +171,7 @@ In the root of the repository you can find the following files:
 ```
 
 The index file is used to show all the options when selecting the reverse shell template. 
-This file is automatically creaded every time the program is executed so if you create new payloads under the `tpl` folder there's no need to update the index since it's done automatically.
+This file is automatically recreated every time the program is executed so if you create new payloads under the `tpl/` folder there's no need to update the index since it's done automatically.
 
 # Contribute
 
