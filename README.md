@@ -58,7 +58,50 @@ After that the application will craft that with the specified parameters and out
 Use the payload generated to execute that in the target machine. You will need to previously have a listener in that IP and PORT you specified when creating the payload. In most cases a simple netcat will do the trick: `nc -l -p <port>`
 
 
+
 ## Reverse Shell types and how they work: 
+
+| Contenido                             | Protocol       | OS              | Encryption    |
+|---------------------------------------|----------------|-----------------|---------------|
+| linux-awk-tcp-noenc-0                 | TCP            | Linux           | no            |
+| linux-awk-tcp-noenc-1                 | TCP            | Linux           | no            |
+| linux-bash_stealth-tcp-noenc          | TCP            | Linux           | no            |
+| linux-bash-tcp-noenc-0                | TCP            | Linux           | no            |
+| linux-bash-tcp-noenc-1                | TCP            | Linux           | no            |
+| linux-bash-tcp-noenc-2                | TCP            | Linux           | no            |
+| linux-bash-udp-noenc-0                | TCP            | Linux           | no            |
+| linux-curl-tcp-noenc                  | TCP            | Linux           | no            |
+| linux-groovy-tcp-noenc                | TCP            | Linux           | no            |
+| linux-java-tcp-noenc                  | TCP            | Linux           | no            |
+| linux-lua-tcp-noenc                   | TCP            | Linux           | no            |
+| linux-netcat_busybox-tcp-noenc        | TCP            | Linux           | no            |
+| linux-node-tcp-noenc                  | TCP            | Linux           | no            |
+| linux-openssl-tcp-SSL-0               | TCP            | Linux           | yes           |
+| linux-perl-tcp-noenc-0                | TCP            | Linux           | no            |
+| linux-perl-tcp-noenc-1                | TCP            | Linux           | no            |
+| linux-python-tcp-noenc-0              | TCP            | Linux           | no            |
+| linux-python-tcp-noenc-1              | TCP            | Linux           | no            |
+| linux-python-tcp-noenc-2              | TCP            | Linux           | no            |
+| linux-python-tcp-noenc-3              | TCP            | Linux           | no            |
+| linux-tclsh-tcp-noenc                 | TCP            | Linux           | no            |
+| linux-telnet-tcp-noenc                | TCP            | Linux           | no            |
+| windows-perl-tcp-noenc-0              | TCP            | Windows         | no            |
+| windows-powershell-tcp-noenc-0        | TCP            | Windows         | no            |
+| windows-powershell-tcp-noenc-0 copy   | TCP            | Windows         | no            |
+| windows-ps_powercat-tcp-noenc         | TCP            | Windows         | no            |
+| windows-pyton-tcp-noenc-0             | TCP            | Windows         | no            |
+| windows-ruby-tcp-noenc-0              | TCP            | Windows         | no            |
+| xx-go-tcp-noenc                       | TCP            | *               | no            |
+| xx-lua-tcp-noenc                      | TCP            | *               | no            |
+| xx-php_exec-tcp-noenc                 | TCP            | *               | no            |
+| xx-php_passthru-tcp-noenc             | TCP            | *               | no            |
+| xx-php_popen-tcp-noenc                | TCP            | *               | no            |
+| xx-php_proc_open-tcp-noenc            | TCP            | *               | no            |
+| xx-php_raw_exec-tcp-noenc             | TCP            | *               | no            |
+| xx-php_shell_exec-tcp-noenc           | TCP            | *               | no            |
+| xx-php_system-tcp-noenc               | TCP            | *               | no            |
+| xx-php-tcp-noenc-0                    | TCP            | *               | no            |
+
 
 In most cases `ncat` or `nc` will work but in some cases you will need to setup some stuff before being able to accept an incomming connection with some revshell types. 
 
@@ -123,6 +166,7 @@ In the root of the repository you can find the following files:
     ├── windows-powershell-tcp-noenc-0.tpl
     ├── windows-pyton-tcp-noenc-0.tpl
     └── windows-ruby-tcp-noenc-0.tpl
+    └── ...
 
 ```
 
