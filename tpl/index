@@ -1,10 +1,12 @@
 linux-awk-tcp-noenc-0
 linux-awk-tcp-noenc-1
+linux-bash_stealth-tcp-noenc
 linux-bash-tcp-noenc-0
 linux-bash-tcp-noenc-1
 linux-bash-tcp-noenc-2
 linux-bash-udp-noenc-0
 linux-curl-tcp-noenc
+linux-groovy-tcp-noenc
 linux-java-tcp-noenc
 linux-lua-tcp-noenc
 linux-netcat_busybox-tcp-noenc
@@ -21,6 +23,7 @@ linux-telnet-tcp-noenc
 windows-perl-tcp-noenc-0
 windows-powershell-tcp-noenc-0
 windows-powershell-tcp-noenc-0 copy
+windows-ps_powercat-tcp-noenc
 windows-pyton-tcp-noenc-0
 windows-ruby-tcp-noenc-0
 xx-go-tcp-noenc

