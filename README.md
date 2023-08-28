@@ -144,6 +144,22 @@ In this section soon you will be able to find advanced reverse shell types with 
 
 ## Some more information
 
+The templates are organized using the following criteria: 
+
+`<os>-<lang>-<proto>-<encryption>-#`
+
+where: 
+
+`<os>` Operating System
+
+`<lang>` Programming language
+
+`<proto>` Protocol TCP/UDP 
+
+`<encryption>` If the payload is using or not an encryption payer
+
+`#` Number
+
 In the root of the repository you can find the following files: 
 
 ```

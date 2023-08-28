@@ -87,10 +87,10 @@ function check_port() {
 }
 
 function selector() {
-	echo -n -e "${GR}>> Type IPv4 address where to listen on: ${NC}"
+	echo -n -e "${GR}>> Type IPv4 address to connect: ${NC}"
 	read ip_addr
 	check_ip ${ip_addr}
-	echo -n -e "${GR}>> Now the TCP port where to listen on: ${NC}" 
+	echo -n -e "${GR}>> Now the TCP port to connect: ${NC}" 
 	read tcp_port
 	check_port ${tcp_port}
 	TPL=$(cat tpl/index | percol --prompt ">>> Select a reverse shell type to generate")
