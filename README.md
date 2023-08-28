@@ -17,9 +17,8 @@
 ---
 
 
-![RSE-screenshot-1](img/rse-screenshot-1.png)
+![RSE-video](img/video.gif)
 
-![RSE-screenshot-1](img/rse-screenshot-2.png)
 
 
 # What is RSE? 
