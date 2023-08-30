@@ -155,7 +155,7 @@ where:
 
 `<proto>` Protocol TCP/UDP 
 
-`<encryption>` If the payload is using or not an encryption payer
+`<encryption>` If the payload is using or not an encryption layer
 
 `#` Number
 
